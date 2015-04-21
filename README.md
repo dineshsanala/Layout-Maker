@@ -1,5 +1,6 @@
 # Layout-Maker
 A web app to build rich html pages using collection of simplified tools.<br/>
+A single page application using BackboneJS, RequireJS, jQuery, underscoreJS and bootstrap.
 
 The application development is divided in to two phases. Basic Features Implementation and the Advanced features implementation.<br/>
 
@@ -29,3 +30,14 @@ Day5: Implementation of Preview Mode, Save and Close - To export the data in to 
 Day6: Buffer time for the above development plan, which includes testing, debugging or attending to any other realtime issues before the final release.
 
 Based on the working plan, Duration for the development is estimated to be 5 or 6 days for the basic version release.
+
+## Dependencies (already included)
+
+* [RequireJS](http://requirejs.org/) 2.0.2 included in /libs
+* [RequireJS](http://requirejs.org/) Text plug-in 2.0.0 included in /libs
+* jQuery 1.10.2 hot-linked from [Google APIs](https://developers.google.com/speed/libraries/devguide)
+* Backbone 1.10.2 hot-linked from [CDNJS](http://cdnjs.com)
+* Underscore 1.5.2 hot-linked from [CDNJS](http://cdnjs.com)
+* Twitter Bootstrap 3.0.2 included in /css, /js, /fonts
+
+To view the application run index.html in your favorate server.
