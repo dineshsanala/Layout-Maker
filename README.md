@@ -22,7 +22,7 @@ Undo and Redo Stacks.<br/>
 # Development Plan:
 Aim is to produce a basic working version for this app so that the advanced features could be added to the same fitting archetecture.<br/>
 
-Day 1: Create Backbone Views, Models and Collectons for all the Interface and its application heirarchy, With complete shape and Basic icons on place.<br/>
+Day 1: Create Backbone Views, Models and Collectons for all the Interface and its application heirarchy, With complete shape and Basic icons on place. i.e. UI consists Top and right toolbars, Working board and sub toolbars.<br/>
 Day 2: To implement the "Drag To Add" Feature with its functionality available for all icons in the Sections and Elements Tabs.<br/>
 Day 3: To implement an editable Interface with drag and drop available for all the previously added static content on the working board.<br/>
 Day 4: Create properties for all working board's content, And to reflect them on the right side tool bar as various editable input fields.<br/>
