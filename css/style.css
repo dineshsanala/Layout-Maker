@@ -1,0 +1,30 @@
+.container{
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0px
+  top:0px;
+}
+.navbar-default{
+  background-color: #000;
+}
+.newNav{
+  height: 54px;
+  background-color: #34383C;
+  z-index: 21;
+  border: none;
+}
+.first{
+  height: 54px;
+}
+.row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.col-md-12{
+  padding: 0px;
+}
+.mainBoard{
+  text-align: center;
+}
