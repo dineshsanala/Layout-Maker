@@ -18,7 +18,7 @@ Sections: Nesting of Divisions.
 Undo and Redo Stacks.
 
 # Development Plan:
-Day 1: Create View, Model and Collecton Objects for all the Interface and its structure, With complete shape and Basic icons on place.
+Day 1: Create View, Model and Collecton Objects for all the Interface and its structure, With complete shape and Basic icons on place.<br/>
 Day 2: "Drag To Add" Feature for all icons in the Sections and Elements Tabs.
 Day 3: Implement an editable Interface(Using drag and drop) for the working board.
 Day 4: Create properties for all working board's content, And to reflect them on the right side tool bar as various editable input fields.
