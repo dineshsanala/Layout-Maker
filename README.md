@@ -1,21 +1,22 @@
 # Layout-Maker
-A web app to build rich html pages using collection of simplified tools.
-The application development is divided in to two phases. Basic Features Implementation and the Advanced features implementation.
+A web app to build rich html pages using collection of simplified tools.<br/>
+
+The application development is divided in to two phases. Basic Features Implementation and the Advanced features implementation.<br/>
 
 # Basic Features
-Basic development involves the following features:
-Elements: Buttons, Texts and Images.
-Sections: Header, Footer, Container.
-Positions: Height, Width, Float, Overflow.(Resizable through working board also.)
-Typography: Font-size, font-style, font-weight, Text aligns, underlines.
-And Backgrounds, Borders, Shadows, Effects.
-Preview, Save and Close actions.
+Basic development involves the following features:<br/>
+Elements: Buttons, Texts and Images.<br/>
+Sections: Header, Footer, Container.<br/>
+Positions: Height, Width, Float, Overflow.(Resizable through working board also.)<br/>
+Typography: Font-size, font-style, font-weight, Text aligns, underlines.<br/>
+And Backgrounds, Borders, Shadows, Effects.<br/>
+Preview, Save and Close actions.<br/>
 
 # Advanced Features
-Advanced Development involves following more feature:
-Elements: dividers, lists, tables, inputboxes, radio buttons, checkboxes, Shapes and lines.
-Sections: Nesting of Divisions.
-Undo and Redo Stacks.
+Advanced Development involves following more feature:<br/>
+Elements: dividers, lists, tables, inputboxes, radio buttons, checkboxes, Shapes and lines.<br/>
+Sections: Nesting of Divisions.<br/>
+Undo and Redo Stacks.<br/>
 
 # Development Plan:
 Day 1: Create View, Model and Collecton Objects for all the Interface and its structure, With complete shape and Basic icons on place.<br/>
