@@ -28,4 +28,4 @@ Day 4: Create properties for all working board's content, And to reflect them on
 Day5: Implementation of Preview Mode, Save and Close - To export the data in to newly created files with choosen formates.<br/>
 Day6: Buffer time for the above development plan, which includes testing, debugging or attending to any other realtime issues before the final release.
 
-Based on the working plan, Duration for the development is estimated to be 5 to 6 days for the basic version release.
+Based on the working plan, Duration for the development is estimated to be 5 or 6 days for the basic version release.
