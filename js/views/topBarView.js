@@ -8,11 +8,13 @@ define(['../.././libs/text.js!../.././templates/topBar.html'], function (topBarT
 		template: topBarTpl,
 
 		initialize: function() {
-			// $.get(this.templateFileName, function(data){console.log(data);this.template=data});		
+			// $.get(this.templateFileName, function(data){console.log(data);this.template=data});
+
 		},
 
 		render: function() {
 			$(this.el).html(_.template(this.template));
+			$(".subToolBar").hide();
 		},
 
 		events: {
@@ -20,7 +22,17 @@ define(['../.././libs/text.js!../.././templates/topBar.html'], function (topBarT
 		},
 
 		subToolbarOpen: function(event, ui){
-			console.log(event);
+			$(".subToolBar").show();
+			$(".topMenu").css("background-color","#E86A51");
+			if( (event.target.id == "elementsBtn") || (event.target.parentElement.id == "elementsBtn") ){
+				$("#elementsBtn").css("background-color","#302f31");
+				$(".elementsSub").show();
+				$(".sectionsSub").hide();
+			}else if( (event.target.id == "sectionsBtn") || (event.target.parentElement.id == "sectionsBtn") ){
+				$("#sectionsBtn").css("background-color","#302f31");
+				$(".elementsSub").hide();
+				$(".sectionsSub").show();
+			}
 		}
 	});
 	return topBarView;
