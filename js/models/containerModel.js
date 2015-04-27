@@ -2,7 +2,7 @@ define(function () {
 	var containerModel;
 	containerModel = Backbone.Model.extend({
 		defaults: {
-            title: "My Container"
+            xPath: "main[0]"
         },
 
       	initialize: function(){

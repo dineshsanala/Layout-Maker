@@ -37,6 +37,8 @@
   border-color: #E86A51;
   height: 400px;
   border-width: 6px;
+  padding-top: 35px;
+  overflow-y: scroll;
 }
 .topMenu{
   font-size: 15px;
@@ -115,4 +117,9 @@
   position: absolute;
   right: 0px;
   top: 0px;
+}
+.mainContainer{
+  height: 50%;
+  width: 90%;
+  border:solid;
 }
