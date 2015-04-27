@@ -1,4 +1,4 @@
-define(['../.././libs/text.js!../.././templates/topBar.html'], function (topBarTpl) {
+define(['../.././libs/text.js!../.././templates/topBar.html', '.././models/textModel'], function (topBarTpl, TextModel) {
 	var topBarView;
 	topBarView = Backbone.View.extend({
 		el: "#topBar",
@@ -9,12 +9,28 @@ define(['../.././libs/text.js!../.././templates/topBar.html'], function (topBarT
 
 		initialize: function() {
 			// $.get(this.templateFileName, function(data){console.log(data);this.template=data});
-
+			
 		},
 
 		render: function() {
 			$(this.el).html(_.template(this.template));
 			$(".subToolBar").hide();
+		    $( ".items" ).draggable({
+		    	revert:true,
+		    	start: function( event, ui ) {
+		    		var element = event.target;
+		    		$(element).css({
+		    			"color":"#665544"
+		    		});
+		    	},
+		    	stop: function( event, ui ) {
+		    		var element = event.target;
+		    		$(element).css({
+		    			"color":"white"
+		    		});
+		    		var textModelElement = new TextModel("New Text!");
+		    	}
+		    });
 		},
 
 		events: {
