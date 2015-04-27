@@ -9,9 +9,14 @@ define(['../.././libs/text.js!../.././templates/home.html', '.././models/boardMo
 
 		data: document.createElement("span"),
 
+		selectedId: '',
+
+		idCount: 0,
+
 		initialize: function() {
 			var self = this;
 			this.render();
+			window.selected = ""
 		},
 
 		render: function() {
@@ -26,16 +31,45 @@ define(['../.././libs/text.js!../.././templates/home.html', '.././models/boardMo
 			  	console.log( self.data );
 			  	if( $(ui.draggable).attr("id") == "containerSection" ){
 			  		self.model.children.push( new containerModel() );
-			  		$( ".mainBoard" ).append("<div class='mainContainer'>Enter Text Here!</div>");
-			  		$( ".mainContainer" ).resizable({
+			  		self.idCount = self.idCount+1;
+			  		var currentNode = "<div id='id"+self.idCount+"' class='mainContainer'>Enter Text Here!</div>"
+			  		$( ".mainBoard" ).append(currentNode);
+			  		$( "#id"+self.idCount ).resizable({
 					  animate: true,
 					  autoHide: false,
-					  handles: "n, e, s, w",
+					  handles: "se",
 					  helper: "resizable-helper",
 					  containment: "parent"
 					});
-					$(".mainContainer").draggable({
+					$( "#id"+self.idCount ).draggable({
 						containment: ".mainBoard"
+					});
+					$( "#id"+self.idCount ).bind("mouseenter", function(event, ui){
+						if( (self.selectedId == "") || ( self.selectedId != $(event.target).attr('id') ) ){
+							$(event.target).css("border-color", "#308911");
+						}
+					});
+					$( "#id"+self.idCount ).bind("mouseleave", function(event, ui){
+						if( (self.selectedId == "") || ( self.selectedId != $(event.target).attr('id') ) ){
+							$(event.target).css("border-color", "#000000");
+						}
+					});
+					$( "#id"+self.idCount ).bind("click", function(event, ui){
+						if( self.selectedId == "" ){
+							$(".mainContainer").css("border-color", "#000000");
+							$(event.target).css("border-color", "#1F1C9E");
+							self.selectedId = $(event.target).attr("id");
+							window.selected = $(event.target).attr("id");
+						}else if( self.selectedId == $(event.target).attr("id") ){
+							self.selectedId = "";
+							window.selected = "";
+							$(".mainContainer").css("border-color", "#000000");
+						}else{
+							$(".mainContainer").css("border-color", "#000000");
+							$(event.target).css("border-color", "#1F1C9E");
+							self.selectedId = $(event.target).attr("id");
+							window.selected = $(event.target).attr("id");
+						}
 					});
 			  	}
 			  }
