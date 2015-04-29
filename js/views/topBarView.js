@@ -16,7 +16,7 @@ define(['../.././libs/text.js!../.././templates/topBar.html', '.././models/textM
 			$(this.el).html(_.template(this.template));
 			$(".subToolBar").hide();
 		    $( ".items" ).draggable({
-		    	revert:true,
+		    	revert : true,
 		    	start: function( event, ui ) {
 		    		var element = event.target;
 		    		$(element).css({

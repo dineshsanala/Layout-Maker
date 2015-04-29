@@ -123,3 +123,12 @@
   width: 90%;
   border:solid;
 }
+
+
+
+.somethingover {
+    background-color: #FCD;
+}
+.ui-state-active{
+  border-color: #FF9100 !important;
+}
