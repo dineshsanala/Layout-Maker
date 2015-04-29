@@ -46,7 +46,12 @@ define(['../.././libs/text.js!../.././templates/home.html', '.././models/boardMo
 				return false;
 			}*/
 			if( $(ui.draggable).attr("id") == "buttonElement" ){
-				$($(".ui-state-active")[ $(".ui-state-active").length-1 ]).append('<button type="button">Click Me!</button>');
+				var buttonParent = $($(".ui-state-active")[ $(".ui-state-active").length-1 ]);
+				buttonParent.append('<button class="btns" type="button">Click Me!</button>');
+				$(".btns").draggable({
+					containment: buttonParent,
+					cancel: false
+				});
 			}
 		},
 
